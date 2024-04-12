@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'MyFontLight';
+    src: url('../../assets/fonts/Montserrat-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MyFontBold';
+    src: url('../../assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+:root{
+    --primary-color:hsl(141.154, 73%, 42%);
+    --primary-color-dark: hsl(141, 53%, 33%);
+    --secondary-color: hsl(0, 0%, 13%);
+    --black: hsl(0, 0%, 7%);
+    --dark-gray: hsl(0, 0%, 33%);
+    --light-gray: hsl(0, 0%, 70%);
+    --white: hsl(0, 0%, 100%);
+}
+body{
+   font-family: 'MyFontMedium', sans-serif; 
+   background-color: var(--black);
+   /* color: var(--white); */
+   font-size: 15px;
+   margin: 0;
+}
+h1, h2, h3, h4, h5, h6, ul, ol{
+    margin: 0;
+}
+.container{
+    /* width: 100%; */
+    max-width: 1080px;
+    margin: 0 auto;
+    /* background-color: blue; */
+}

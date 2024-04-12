@@ -1,0 +1,48 @@
+@charset "utf-8";
+@import url("./partials/base.css");
+@import url("./partials/hero.css");
+h1{
+    margin: 0 auto;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    font-size: 42px;
+}
+.frame_login{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+}
+.field{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.field input{
+    /* height: 40px; */
+    padding: 2px 4px;
+    font-size: 20px;
+}
+a{
+    color: white;
+}
+.btn{
+    padding: 4px 8px;
+    font-size: 18px;
+    border-radius: 8px;
+}
