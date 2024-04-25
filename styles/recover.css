@@ -20,6 +20,7 @@ h2{
     align-items: center;
     flex-direction: column;
 }
+
 .form{
     display: flex;
     flex-direction: column;
@@ -29,7 +30,6 @@ h2{
     align-items: center;
     /* width: 40%; */
     margin: 0 auto;
-    
 }
 .field{
     display: flex;
@@ -88,6 +88,14 @@ a{
     padding: 4px 8px;
     font-size: 18px;
     border-radius: 8px;
+    display: block;
+    text-decoration: none;
+}
+.btn_send{
+    background-color: green;
+}
+.btn_cancel{
+    background-color: red;
 }
 .br{
     /* box-sizing: border-box; */

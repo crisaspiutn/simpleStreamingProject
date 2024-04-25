@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="refresh" content="1"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/login.css">
@@ -20,27 +21,27 @@
             <span class="texto">Mas vistos!</span>
         </section>
         <section class="frame_login">
-            
-            <form action="page/home.html" id="form_inicio_sesion" class="form" method="post">
+            <h2>Inicia sesión</h2>
+            <form action="pages/home.html" id="form_inicio_sesion" class="form" method="post">
                 <div class="field">
-                    <label for="usuario">Usuario</label>
-                    <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+                    <label class="br" for="usuario">Usuario</label>
+                    <input class="br" type="text" name="usuario" id="usuario" placeholder="Usuario">
                 </div>
                 <div class="field">
-                    <label for="clave">Contraseña</label>
+                    <label class="br" for="clave">Contraseña</label>
                     <!-- <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña" required minlength="8"> -->
-                    <input type="password" name="clave" id="clave" placeholder="Contraseña">
+                    <input class="br" type="password" name="clave" id="clave" placeholder="Contraseña">
                     <!-- <p id="log ocultar"></p> -->
                 </div>
-                <p>
-                    <button type="submit" class="btn">Iniciar sesión</button>
+                <p class="fila">
+                    <button class="btn">Iniciar sesión</button>
                 </p>
             </form>
             <p>
-                <a href="registro.html" class="link">Recuperar contraseña</a>
+                <a href="pages/recover.html" class="link">Recuperar contraseña</a>
             </p>
             <p>
-                <a href="registro.html" class="link">Registrarme</a>
+                <a href="pages/register.html" class="link">Registrarme</a>
             </p>
 
         </section>
