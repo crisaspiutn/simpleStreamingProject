@@ -29,12 +29,19 @@ h1 {
 
 .campo-correo {
     margin: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .input-correo {
     width: 100%;
     margin-top: 8px;
     padding: 3px;
+}
+
+.contenedor-botonEnviar {
+    display: flex;
+    justify-content: center;
 }
 
 .botonEnviar {
@@ -44,6 +51,7 @@ h1 {
     color: white;
     border-radius: 4px;
     border-style: none;
+    cursor: pointer;
 }
 
 .reucperar-num {
