@@ -1,0 +1,57 @@
+h1 {
+    margin: 0 auto;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    font-size: 42px;
+}
+
+.boton-iniciar-sesion a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.main-container {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 300px;
+    margin-left: 300px;
+    padding: 30px;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.campo-correo {
+    margin: 20px;
+}
+
+.input-correo {
+    width: 100%;
+    margin-top: 8px;
+    padding: 3px;
+}
+
+.botonEnviar {
+    background-color: red;
+    height: 30px;
+    width: 100px;
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+}
+
+.reucperar-num {
+    margin-top: 15px;
+    color: white;
+}
+
+.link-iniciar-sesion {
+    margin-top: 10px;
+    color: white;
+}
