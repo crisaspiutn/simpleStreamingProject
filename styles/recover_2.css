@@ -1,5 +1,26 @@
 @charset "utf-8";
 @import url("./partials/base.css");
+
+.main-container {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+@media (min-width: 769px) {
+    .main-container {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
 h1 {
     margin: 0 auto;
     padding: 20px 0;
@@ -11,22 +32,6 @@ h1 {
 .boton-iniciar-sesion a {
     text-decoration: none;
     color: white;
-}
-
-
-.main-container {
-    background-color: rgb(60, 60, 60);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 300px;
-    margin-left: 300px;
-    padding: 30px;
-    flex-direction: column;
-    border-radius: 5px;
 }
 
 .campo-correo {
