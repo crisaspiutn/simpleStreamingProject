@@ -38,3 +38,64 @@ img {
     margin-bottom: 30px;
     margin-top: 5px;
 }
+
+nav {
+    background-color: rgb(44, 44, 44);
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navPeliculasEnPeliculas {
+    color: rgb(255, 49, 49);
+}
+
+.navSeriesEnSeries {
+    color: rgb(255, 49, 49);
+}
+
+li a:hover {
+    color: rgb(255, 49, 49);
+}
+
+@media(max-width: 768px) {
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    li a {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 576px) {
+    .fila {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
