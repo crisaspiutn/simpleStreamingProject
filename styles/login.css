@@ -1,17 +1,20 @@
 @charset "utf-8";
 @import url("./partials/base.css");
 @import url("./partials/hero.css");
-h1{
+
+h1 {
     margin: 0 auto;
     padding: 20px 0;
     color: white;
     text-align: center;
     font-size: 42px;
 }
-h2{
+
+h2 {
     padding: 20px 0;
 }
-.frame_login{
+
+.frame_login {
     padding: 10px;
     /* text-align: center; */
     color: white;
@@ -20,7 +23,8 @@ h2{
     align-items: center;
     flex-direction: column;
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
     /* display: inline-block; */
@@ -29,9 +33,10 @@ h2{
     align-items: center;
     /* width: 40%; */
     margin: 0 auto;
-    
+
 }
-.field{
+
+.field {
     display: flex;
     /* display: grid; */
     /* grid-template-columns: auto min-content; */
@@ -48,23 +53,28 @@ h2{
     margin: 0 auto;
     /* margin-bottom: 10px; */
 }
-.field>*{
+
+.field>* {
     margin: 8px 12px;
 }
-.field label{
+
+.field label {
     /* margin: 0 auto; */
     /* text-align: left; */
     /* width: 110px; */
 }
-.fila{
+
+.fila {
     /* display: block; */
     display: flex;
     width: 100%;
 }
-.btn{
+
+.btn {
     margin: 0 auto;
 }
-.field input{
+
+.field input {
     /* margin: 0 auto; */
     /* height: 40px; */
     display: flex;
@@ -75,21 +85,30 @@ h2{
     /* width: 240px;  */
     /* margin-left: 10px; */
 }
-.centrador{
+
+.centrador {
     /* display: flex; */
     /* justify-content: center; */
     /* text-align: center; */
     /* margin: 0 auto; */
 }
-a{
+
+a {
     color: white;
 }
-.btn{
+
+.btn {
     padding: 4px 8px;
     font-size: 18px;
     border-radius: 8px;
 }
-.br{
+
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.br {
     /* box-sizing: border-box; */
     /* border: 1px solid red; */
 }
