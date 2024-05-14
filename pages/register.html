@@ -1,88 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta http-equiv="refresh" content="4"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrate</title>
-    <link rel="stylesheet" href="../styles/register2.css">
+    <link rel="stylesheet" href="../styles/registro.css">
 </head>
+
 <body>
-    <main class="container">
-        <h2>Registrarse</h2>
-        <form action="page/home.html" class="form" method="post">
-            <div class="col1">
-                <!-- <div class="fila"> -->
-                    <label class="br" for="usuario">Nombre</label>
-                    <input class="br" type="email" name="usuario" id="usuario" placeholder="Nombre">
-                <!-- </div> -->
-                <!-- <div class="fila"> -->
-                    <label class="br" for="usuario">Apellido</label>
-                    <input class="br" type="text" name="usuario" id="usuario" placeholder="Ingrese apellido">
-                <!-- </div> -->
-                <!-- <div class="fila"> -->
-                    <label class="br" for="usuario">E-mail</label>
-                    <input class="br" type="text" name="usuario" id="usuario" placeholder="ingrese email">
-                <!-- </div> -->
-                <!-- <div class="fila"> -->
-                    <label class="br" for="clave">Nombre de Usuario</label>
-                    <input class="br" type="text" name="clave" id="clave" placeholder="nombre de usuario">
-                <!-- </div> -->
-                <!-- <div class="fila"> -->
-                    <label class="br" for="clave">Contraseña</label>
-                    <input class="br" type="password" name="clave" id="clave" placeholder="Contraseña">
-                <!-- </div> -->
-                <!-- <div class="fila"> -->
-                    <label class="" for="clave">Repetir contraseña</label>
-                    <input class="" type="password" name="clave" id="clave" placeholder="repetir Contraseña">
-                <!-- </div> -->
+
+    class="label"<header>
+        <h1>Unflix</h1>
+    </header>
+
+    <main class="main">
+
+        <div class="container">
+            <div class="divH2">
+                <h2>Registrarse</h2>
             </div>
-            <div class="col2">
-                <p class="titulo">
-                    <strong>Método de pago</strong>
-                </p>
-                <div>
-                    <div>
-                        <p class="fila">
-                            <input type="radio" name="pago" value="tarjeta" id="tarjeta">
-                            <label class="label_opcion" for="tarjeta">Tarjeta de crédito</label>
-                        </p>
-                        <p class="fila_opciopnes">
-                            <input type="number" name="num_tarjeta" id="n_tarjeta" placeholder="Número de tarjeta">
-                            <input type="number" name="cod_tarjeta" id="cod3" placeholder="xxx">
-                        </p>
-                    </div>
-                    <div>
-                        <p class="fila">
-                            <input type="radio" name="pago" value="cupon" id="cupon">
-                            <label class="label_opcion" for="tarjeta">Cupón de pago</label>
-                        </p>
-                        <div class="fila_opciopnes">
-                            <div class="fila_item">
-                                <input type="checkbox" name="" id="">
-                                <label class="label_opcion" for="">Pago fácil</label>
-                            </div>
-                            <p class="fila_item">
-                                <input type="checkbox" name="" id="">
-                                <label class="label_opcion" for="">RapiPago</label>
-                            </p>
+            <div class="containerFormulario">
+                <form action="">
+                    <div class="containerColumnaUno">
+                        <div class="containerInputs">
+                            <label class="label" for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                        </div>
+
+                        <div class="containerInputs">
+                            <label class="label" for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido">
+                        </div>
+
+                        <div class="containerInputs">
+                            <label class="label" for="email">Correo electrónico</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+
+                        <div class="containerInputs">
+                            <label class="label" for="telefono">Teléfono</label>
+                            <input type="tel" name="telefono" id="telefono">
+                        </div>
+
+                        <div class="containerInputs">
+                            <label class="label" for="contraseña">Contraseña</label>
+                            <input class="label" type="password" name="contraseña" id="contraseña">
+                        </div>
+
+                        <div class="containerInputs">
+                            <label for="repContraseña">Repetir contraseña</label>
+                            <input class="label" type="password" name="repContraseña" id="repContraseña">
                         </div>
                     </div>
-                    <div>
-                        <p class="fila">
-                            <input type="radio" name="pago" value="transferencia" id="transferencia">
-                            <label class="label_opcion" for="tarjeta">Transferencia bancaria</label>
-                        </p>
-                        <p class="fila_opciopnes"><span>CBU: 2183909411100018971375</span></p>
+
+                    <div class="containerColumnaDos">
+
+                        <div class="containerInputs">
+                            <label class="label" for="nombreTarjeta">Nombre en la tarjeta</label>
+                            <input type="text" name="nombreTarjeta" id="nombreTarjeta">
+                        </div>
+                        <div class="containerInputs">
+                            <label class="label" for="numeroTarjeta">Numero de tarjeta</label>
+                            <input type="text" name="numeroTarjeta" id="numeroTarjeta">
+                        </div>
+                        <div class="containerInputs">
+                            <label class="label" for="vencimientoTarjeta">Fecha de vencimiento</label>
+                            <input type="text" name="vencimientoTarjeta" id="vencimientoTarjeta">
+                        </div>
+                        <div class="containerInputs">
+                            <label class="label" for="cvv">CVV</label>
+                            <input type="text" name="cvv" id="cvv">
+                        </div>
+                        <div class="containerInputs">
+                            <label class="label" for="dni">DNI</label>
+                            <input type="text" name="dni" id="dni">
+                        </div>
+                        <div class="divBotonEnviar">
+                            <button class="botonEnviar" type="submit"><a href="inicio.html">Registrarse</a></button>
+                        </div>
                     </div>
-                </div>
-                <p class="fila">
-                    <a class="btn btn_send" href="/">Confirmar</a>
-                    <a class="btn btn_cancel" href="/">Cancelar</a>
-                </p>
+
+
+                </form>
             </div>
-        </form>
+        </div>
     </main>
 </body>
+
 </html>
