@@ -9,3 +9,73 @@ h1 {
     text-align: center;
     font-size: 42px;
 }
+
+.containerImgTexto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.containerImg {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.containerTextoBotones {
+    flex: 2;
+}
+
+.containerTexto p {
+    text-align: justify;
+    line-height: 1.5;
+    color: white;
+}
+
+.containerImg img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.botonVer {
+    background-color: red;
+    height: 30px;
+    width: 100px;
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.botonVolver {
+    background-color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .containerImgTexto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containerBotones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+}

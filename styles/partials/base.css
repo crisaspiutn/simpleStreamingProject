@@ -2,12 +2,14 @@
     font-family: 'MyFontLight';
     src: url('../../assets/fonts/Montserrat-Light.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'MyFontBold';
     src: url('../../assets/fonts/Montserrat-Bold.ttf') format('truetype');
 }
-:root{
-    --primary-color:hsl(141.154, 73%, 42%);
+
+:root {
+    --primary-color: hsl(141.154, 73%, 42%);
     --primary-color-dark: hsl(141, 53%, 33%);
     --secondary-color: hsl(0, 0%, 13%);
     --black: hsl(0, 0%, 7%);
@@ -15,21 +17,38 @@
     --light-gray: hsl(0, 0%, 70%);
     --white: hsl(0, 0%, 100%);
 }
-body{
-   font-family: 'MyFontMedium', sans-serif; 
-   background-color: var(--black);
-   /* color: var(--white); */
-   font-size: 16px;
+
+body {
+    font-family: 'MyFontMedium', sans-serif;
+    background-color: var(--black);
+    /* color: var(--white); */
+    font-size: 16px;
 }
-*{
+
+* {
     margin: 0;
 }
-p{
+
+p {
     margin: 10px 0;
 }
-.container{
+
+.container {
     /* width: 100%; */
     max-width: 1080px;
     margin: 0 auto;
     /* background-color: blue; */
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
 }
