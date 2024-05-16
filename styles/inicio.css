@@ -2,12 +2,17 @@
 @import url("./partials/base.css");
 @import url("./partials/hero.css");
 
+
+
+
+
 h1 {
     margin: 0 auto;
     padding: 20px 0;
     color: white;
     text-align: center;
     font-size: 42px;
+    flex-grow: 1;
 }
 
 h3 {
@@ -42,6 +47,7 @@ img {
 nav {
     background-color: rgb(44, 44, 44);
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 ul {
@@ -92,6 +98,8 @@ li a:hover {
         font-size: 18px;
     }
 }
+
+
 
 @media(max-width: 576px) {
     .fila {
