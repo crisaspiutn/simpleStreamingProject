@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url("./partials/base.css");
+@import url("./partials/hero.css");
+
+h1 {
+    margin: 0 auto;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    font-size: 42px;
+}
+
+.contenedorPerfil {
+    background-color: rgb(60, 60, 60);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotoPerfil {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+
+
+h2 {
+    color: white;
+    font-size: 40px;
+}
+
+p {
+    color: white;
+    margin-top: 3px;
+}
+
+.botonCerrarSesion {
+    background-color: red;
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width:600px) {
+    .contenedorPerfil {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .contenedorImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .fotoPerfil {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .contenedorDatosYCerrarSesion {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
