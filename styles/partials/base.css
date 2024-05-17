@@ -12,10 +12,13 @@
     --primary-color: hsl(141.154, 73%, 42%);
     --primary-color-dark: hsl(141, 53%, 33%);
     --secondary-color: hsl(0, 0%, 13%);
-    --black: hsl(0, 0%, 7%);
+    /* --black: hsl(0, 0%, 7%); */
+    --black: black;
     --dark-gray: hsl(0, 0%, 33%);
     --light-gray: hsl(0, 0%, 70%);
     --white: hsl(0, 0%, 100%);
+    --verde:#4CAF50;
+    --rojo:#f44336;
 }
 
 body {

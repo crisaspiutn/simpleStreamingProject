@@ -10,22 +10,37 @@
 
 <body>
 
-    <header>
+    <header class="header">
         <a href="inicio.html">
             <h1>Unflix</h1>
         </a>
 
-        <div class="divPerfil">
+        <!-- <div class="divPerfil">
             <a href="perfil.html" class="linkPerfil">Perfil</a>
-        </div>
+        </div> -->
 
     </header>
 
     <nav>
         <ul>
-            <li><a href="inicio.html" class="navPeliculasEnPeliculas">Peliculas</a></li>
+            <li><a href="inicio.html" class="navPeliculasEnPeliculas">Home</a></li>
             <li><a href="inicioSeries.html">Series</a></li>
+            <li><a href="inicio.html">Peliculas</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
         </ul>
+        <div class="filtros">
+            <div class="filtro_categoria">
+                <label for="categorias">categorías</label>
+                <select name="categoria" id="seleccionador" placeholder="seleccionar categoria">
+                    <option value="cat1">ficcion</option>
+                    <option value="cat1" selected>terror</option>
+                    <option value="cat1">comedia</option>
+                    <option value="cat1">aventura</option>
+                    <option value="cat1">anime</option>
+                </select>
+            </div>
+            <input type="search" class="icon_search" placeholder="buscar por nombre">
+        </div>
     </nav>
 
     <main>

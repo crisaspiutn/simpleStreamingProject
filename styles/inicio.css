@@ -5,14 +5,17 @@
 
 
 
-
+.header{
+    display: flex;
+    justify-content: space-evenly;
+}
 h1 {
     margin: 0 auto;
     padding: 20px 0;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     font-size: 42px;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 h3 {
@@ -46,8 +49,8 @@ img {
 
 nav {
     background-color: rgb(44, 44, 44);
-    margin-bottom: 30px;
-    margin-top: 30px;
+    /* margin-bottom: 30px; */
+    /* margin-top: 30px; */
 }
 
 ul {
@@ -78,7 +81,16 @@ li a {
 li a:hover {
     color: rgb(255, 49, 49);
 }
-
+.filtros{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 18px;
+}
+.filtros #seleccionador{
+    height: 20px;
+}
 @media(max-width: 768px) {
     img {
         width: 100%;
