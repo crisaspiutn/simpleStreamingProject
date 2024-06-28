@@ -10,67 +10,76 @@
     <div class="container">
         <div class="form">
             <h2>Registrarse</h2>
-            <form>
+            <form class="form_real">
                 <div class="form_adapter">
     
                     <div class="col1">
                         <div class="form-group">
                             <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" placeholder="Nombre de usuario">
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre de usuario">
+                            <span id="msg_nombre">debe tener</span>
                         </div>
                         <div class="form-group">
                             <label for="apellido">Apellido</label>
-                            <input type="text" id="apellido" placeholder="Ingrese apellido">
+                            <input type="text" id="apellido" name="apellido" placeholder="Ingrese apellido">
+                            <span id="msg_apellido">debe tener</span>
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" placeholder="Ingrese email">
+                            <input type="email" id="email" name="email" placeholder="Ingrese email">
+                            <span id="msg_email">debe tener</span>
                         </div>
                         <div class="form-group">
-                            <label for="username">Nombre de usuario</label>
-                            <input type="text" id="username" placeholder="Nombre de usuario">
+                            <label for="usuario">Nombre de usuario</label>
+                            <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario">
+                            <span id="msg_usuario">debe tener</span>
                         </div>
                         <div class="form-group">
-                            <label for="password">Contraseña</label>
-                            <input type="password" id="password" placeholder="Contraseña">
+                            <label for="clave">Contraseña</label>
+                            <input type="password" id="clave" name="clave" placeholder="Contraseña">
+                            <span id="msg_clave">debe tener</span>
                         </div>
                         <div class="form-group">
-                            <label for="confirm-password">Repetir contraseña</label>
-                            <input type="password" id="confirm-password" placeholder="Repetir contraseña">
+                            <label for="repiteclave">Repetir contraseña</label>
+                            <input type="password" id="repiteclave" name="repiteclave" placeholder="Repetir contraseña">
+                            <span id="msg_repiteclave">debe tener</span>
                         </div>
                     </div>
                     
                     <div class="form-group">
                         <p class="subtitulo">Método de pago</p>
                         <div class="payment-method">
+                            <div id="msg_payment">debe tener</div>
                             <div class="fila_payment">
-                                <input type="radio" id="credit-card" name="payment" value="credit-card">
+                                <input type="radio" id="credit-card" name="payment" required value="credito">
                                 <label for="credit-card">Tarjeta de crédito</label>
                             </div>
                             <div class="fila_campos_asociativa">
-                                <input type="text" id="card-number" placeholder="Número de tarjeta">
-                                <input type="text" id="card-cvc" placeholder="XXX" maxlength="3">
+                                <input type="text" id="tarjeta" name="tarjeta" placeholder="Número de tarjeta">
+                                <input type="text" id="codigo" name="codigo" placeholder="XXX" maxlength="3">
+                                <span id="msg_tarjeta">debe tener entre 16 y 19 numeros</span>
                             </div>
+                            <span id="msg_codigo">el codigo: no puede ser 000</span>
                         </div>
                         <div class="payment-method">
                             <div class="fila_payment">
-                                <input type="radio" id="coupon" name="payment" value="coupon">
-                                <label for="coupon">Cupón de pago</label>
+                                <input type="radio" id="payment" name="payment" value="cupon">
+                                <label for="payment">Cupón de pago</label>
                             </div>
                             <div class="fila_campos">
                                 <div class="opciones">
-                                    <input type="checkbox" id="pago-facil">
+                                    <input type="checkbox" name="si_pago_facil" id="pago-facil">
                                     <label for="pago-facil">Pago fácil</label>
                                 </div>
                                 <div class="opciones">
-                                    <input type="checkbox" id="rapipago">
+                                    <input type="checkbox" name="si_rapi_pago" id="rapipago">
                                     <label for="rapipago">RapiPago</label>
                                 </div>
                             </div>
                         </div>
                         <div class="payment-method">
                             <div class="fila_payment">
-                                <input type="radio" id="bank-transfer" name="payment" value="bank-transfer">
+                                <input type="radio" id="bank-transfer" name="payment" value="transferencia">
                                 <label for="bank-transfer">Transferencia bancaria</label>
                             </div>
                             <div class="fila_campos">
@@ -82,10 +91,12 @@
                     </div>
                 </div>
                 <div class="form-actions">
-                    <a href="/" class="btn confirm">Confirmar</a>
+                    <input type="button" class="btn confirm" name="btn_form" value="Confirmar">
+                    <!-- <a href="/" class="btn confirm">Confirmar</a> -->
                     <!-- <button type="button" class="btn cancel">Cancelar</button> -->
                     <a href="/" class="btn cancel">Cancelar</a>
                 </div>
+                <div id="errorMensaje"></div>
             </form>
         </div>
         <footer class="contenedor">
@@ -96,5 +107,6 @@
             </div>
         </footer>
     </div>
+    <script src="../scripts/register.js" type="module"></script>
 </body>
 </html>

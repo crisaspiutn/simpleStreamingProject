@@ -124,15 +124,24 @@ input[type="password"] {
     color: white;
     font-weight: 800;
     font-size: 16px;
+    text-decoration: none;
 }
 .btn.confirm {
     background-color: var(--verde);
+    text-decoration: none;
+}
+.btn.confirm:disabled {
+    background-color: rgb(29, 87, 29);
+    cursor: auto;
 }
 .btn.cancel {
     background-color: var(--rojo);
+    text-decoration: none;
     /* margin-left: px; */
 }
-
+[id*="msg"]{
+    color: rgb(207, 39, 39);
+}
 
 
 
