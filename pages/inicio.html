@@ -14,7 +14,10 @@
         <a href="inicio.html">
             <h1>Unflix</h1>
         </a>
-
+        <div class="header_der">
+            <span id="nombre_usuario"></span>
+            <button id="btn_cerrar_sesion" class="btn_salir">Salir</button>
+        </div>
         <!-- <div class="divPerfil">
             <a href="perfil.html" class="linkPerfil">Perfil</a>
         </div> -->
@@ -39,33 +42,35 @@
                     <option value="cat1">anime</option>
                 </select>
             </div>
-            <input type="search" class="icon_search" placeholder="buscar por nombre">
+            <input id="buscador" type="search" class="icon_search" placeholder="buscar por nombre">
         </div>
     </nav>
-
     <main>
         <div class="divMasVistos">
-            <h3>Mas Vistos</h3>
+            <h3>Peliculas</h3>
             <div class="contenedorFila">
-                <div class="imgMasVistos fila">
-                    <a href="detallesPelicula1.html"><img src="../imagenes/img1.jpg" class="imgPelicula"></a>
+                <div class="imgMasVistos fila" id="marco_peliculas">
+                    <!-- <a href="detallesPelicula1.html">
+                        <img src="../imagenes/img1.jpg" class="imgPelicula">
+                    </a>
                     <a href="detallesPelicula2.html"><img src="../imagenes/img2.jpg" class="imgPelicula"></a>
                     <a href="detallesPelicula3.html"><img src="../imagenes/img3.jpg" class="imgPelicula"></a>
                     <a href="detallesPelicula4.html"><img src="../imagenes/img4.jpg" class="imgPelicula"></a>
-                    <a href="detallesPelicula5.html"><img src="../imagenes/img5.jpg" class="imgPelicula"></a>
+                    <a href="detallesPelicula5.html"><img src="../imagenes/img5.jpg" class="imgPelicula"></a> -->
                 </div>
             </div>
         </div>
 
         <div class="divNovedades">
-            <h3>Novedades</h3>
+            <h3>Series</h3>
             <div class="contenedorFila">
-                <div class="imgNovedades fila">
-                    <a href="detallesPelicula6.html"><img src="../imagenes/img6.jpg" class="imgPelicula"></a>
-                    <a href="detallesPelicula7.html"><img src="../imagenes/img7.jpg" class="imgPelicula"></a>
-                    <a href="detallesPelicula8.html"><img src="../imagenes/img8.jpg" class="imgPelicula"></a>
-                    <a href="detallesPelicula9.html"><img src="../imagenes/img9.jpg" class="imgPelicula"></a>
-                    <a href="detallesPelicula10.html"><img src="../imagenes/img10.jpg" class="imgPelicula"></a>
+                <!-- <div class="imgNovedades fila" id="marco_series"> -->
+                <div class="imgMasVistos fila" id="marco_series">
+                    <!-- <a href="detallesPelicula6.html"><img src="../imagenes/img6.jpg" class="imgPelicula"></a> -->
+                    <!-- <a href="detallesPelicula7.html"><img src="../imagenes/img7.jpg" class="imgPelicula"></a> -->
+                    <!-- <a href="detallesPelicula8.html"><img src="../imagenes/img8.jpg" class="imgPelicula"></a> -->
+                    <!-- <a href="detallesPelicula9.html"><img src="../imagenes/img9.jpg" class="imgPelicula"></a> -->
+                    <!-- <a href="detallesPelicula10.html"><img src="../imagenes/img10.jpg" class="imgPelicula"></a> -->
                 </div>
             </div>
         </div>
@@ -87,6 +92,7 @@
     <footer>
         <p>2024 Unflix. Todos los derechos reservados.</p>
     </footer>
+    <script src="../scripts/inicio.js" type="module"></script>
 </body>
 
 </html>

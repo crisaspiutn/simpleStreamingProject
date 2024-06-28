@@ -1,5 +1,5 @@
 import {guardaDatos,getDatos, checkExistLocalStorage} from './DB.js';
-import { buscarUsuario, siExisteUsuario } from './login.js';
+import { buscarUsuario, siExisteUsuario } from './usuario.js';
 checkExistLocalStorage();
 let form = document.getElementById("form_inicio_sesion");
 let log = document.getElementById("log");
@@ -20,8 +20,11 @@ function onFormSubmit(e){
         if(datos.usuarios[usuario].clave==clave){
             datos.usuario=usuario;
             guardaDatos(datos);
-            window.location = "/pantalla-principal.html";
-        } log.innerText="clave incorrecta";
+            log.innerText="clave correcta";
+            log.style.color="green";
+            alert("inicio sesion correctamente");
+            window.location = "/pages/inicio.html";
+        }else log.innerText="clave incorrecta";
     }else console.log("usuario no encontrado");
 }
 // checkSession(usuario);

@@ -5,6 +5,7 @@ let datos=getDatos();
 
 let form = document.querySelector(".form_real");
 form.addEventListener('input', onFormChange);
+form.addEventListener('submit', sendForm);
 // document.getElementById('confirmar').addEventListener('click', onConfirmar);
 // document.getElementById('cancelar').addEventListener('click', onCancelar);
 form.btn_form.disabled = true;
@@ -34,8 +35,8 @@ function onFormChange() {
     let isFormValid = true;
     lista_campos.forEach(e=> {
         // console.log("valor");
-        console.log(e.clave);// clave nombre
-        console.log(objeto[e.clave]);// valor escrito
+        // console.log(e.clave);// clave nombre
+        // console.log(objeto[e.clave]);// valor escrito
         let condi;
         if(e.clave=="repiteclave"){
             // let condi=e.condicion(objeto[e.clave]);
@@ -43,36 +44,35 @@ function onFormChange() {
         }
         else{
             condi=e.condicion(objeto[e.clave]);
+            if(e.clave=="tarjeta"){
+                condi=condi&&validateCreditCard(objeto["tarjeta"]);
+                console.log(condi);
+            }
         }
-        console.log(condi);
+        // console.log(condi);
         e.e.style.display=condi?"none":"initial";
         isFormValid=isFormValid&&condi;
-        console.log(isFormValid);
+        // console.log(isFormValid);
         // console.log(e.condicion(objeto[e.clave]));
     });
     form.btn_form.disabled = !isFormValid;
     console.log(datos.usuarios);
+    
+    
     // document.getElementById('errorMensaje').textContent = errorMensaje;
 }
-
-function onConfirmar() {
-    alert('Formulario confirmado. Navegando al login...');
-    window.location.href = 'login.html';
-}
-
-function onCancelar() {
-    alert('Formulario cancelado. Navegando al login...');
-    window.location.href = 'login.html';
-}
-
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
-
-function validatePassword(password) {
-    const re = /^(?=.*[A-Za-z]{2,})(?=.*\d{2,})(?=.*[!@#$%^&*()_+]{2,}).{8,}$/;
-    return re.test(password);
+function sendForm(e){
+    console.log("tocado");
+    e.preventDefault();
+    const valores=Object.fromEntries(new FormData(e.target))
+    if(siExisteUsuario(valores.usuario,datos.usuarios))alert("el usario ya existe");
+    else{// si no existe usuario
+        console.log("registrado correctamente");
+        datos.usuarios[valores.usuario]=(valores);
+        guardaDatos(datos);
+        alert("registrado con exito");
+        window.location = "/";
+    }
 }
 
 function validateCreditCard(numTarjeta) {
