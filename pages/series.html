@@ -26,8 +26,8 @@
 
     <nav>
         <ul>
-            <li><a href="inicio.html" class="seleccionado">Home</a></li>
-            <li><a id="btn_series" href="series.html">Series</a></li>
+            <li><a href="inicio.html">Home</a></li>
+            <li><a class="seleccionado" id="btn_series" href="series.html">Series</a></li>
             <li><a id="btn_peliculas" href="peliculas.html">Peliculas</a></li>
             <li><a href="perfil.html">Perfil</a></li>
         </ul>
@@ -36,31 +36,16 @@
         <div class="filtro_categoria">
             <label for="categorias">categorías</label>
             <select name="categoria" id="seleccionador" placeholder="seleccionar categoria">
-                <!-- <option value="cat1">ficcion</option> -->
-                <!-- <option value="cat1" selected>terror</option> -->
-                <!-- <option value="cat1">comedia</option> -->
-                <!-- <option value="cat1">aventura</option> -->
-                <!-- <option value="cat1">anime</option> -->
+                <option value="cat1">ficcion</option>
+                <option value="cat1" selected>terror</option>
+                <option value="cat1">comedia</option>
+                <option value="cat1">aventura</option>
+                <option value="cat1">anime</option>
             </select>
         </div>
         <input id="buscador" type="search" class="icon_search" placeholder="buscar por título">
     </div>
     <main>
-        <div class="divMasVistos">
-            <h3 id="titulo_peliculas">Peliculas</h3>
-            <div class="contenedorFila">
-                <div class="imgMasVistos fila" id="marco_peliculas">
-                    <!-- <a href="detallesPelicula1.html">
-                        <img src="../imagenes/img1.jpg" class="imgPelicula">
-                    </a>
-                    <a href="detallesPelicula2.html"><img src="../imagenes/img2.jpg" class="imgPelicula"></a>
-                    <a href="detallesPelicula3.html"><img src="../imagenes/img3.jpg" class="imgPelicula"></a>
-                    <a href="detallesPelicula4.html"><img src="../imagenes/img4.jpg" class="imgPelicula"></a>
-                    <a href="detallesPelicula5.html"><img src="../imagenes/img5.jpg" class="imgPelicula"></a> -->
-                </div>
-            </div>
-        </div>
-
         <div class="divNovedades">
             <h3 id="titulo_series">Series</h3>
             <div class="contenedorFila">
@@ -115,7 +100,6 @@
     <footer>
         <p>2024 Unflix. Todos los derechos reservados.</p>
     </footer>
-    <script src="../scripts/inicio.js" type="module"></script>
+    <script src="../scripts/js_series.js" type="module"></script>
 </body>
-
 </html>

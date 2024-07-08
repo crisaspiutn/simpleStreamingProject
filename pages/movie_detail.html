@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Pelicula</title>
+    <link rel="stylesheet" href="../styles/movie_detail.css?algo=22">
+</head>
+<body>
+    <header class="header">
+        <a href="inicio.html">
+            <h1>Unflix</h1>
+        </a>
+        <div class="header_der">
+            <span id="nombre_usuario"></span>
+            <button id="btn_cerrar_sesion" class="btn_salir">Salir</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Home</a></li>
+            <li><a id="btn_series" href="inicioSeries.html">Series</a></li>
+            <li><a id="btn_peliculas" href="inicio.html">Peliculas</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="marco">
+            <div class="img_container">
+                <div id="vista_video">
+                    <!-- <img src="" alt="foto de pelicula"> -->
+                </div>
+                <div>
+                    <button id="btn_comenzar">comenzar</button>
+                </div>
+            </div>
+            <div class="movie_detail">
+                <p><strong>Título: </strong><span id="d_titulo"></span></p>
+                <form id="d_temporadas" class="ocultar">
+                    <strong>Temporadas: </strong>
+                    <select name="temporada" id="op_temporadas">
+                        <!-- <option value="temporada 2">temporada 2</option> -->
+                    </select>
+                    <strong>Capítulo: </strong>
+                    <select name="capitulo" id="op_capitulos">
+                        <!-- <option value="capitulo 2">capitulo 2</option> -->
+                    </select>
+
+                </form>
+                <p><strong>Duración: </strong><span id="d_duracion"></span></p>
+                <p><strong>Genero: </strong><span id="d_genero"></span></p>
+                <p><strong>Actores: </strong><span id="d_actores"></span></p>
+                <p><strong>Tipo: </strong><span id="d_tipo"></span></p>
+                <p><strong>Descripción: </strong><span id="d_descripcion">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, est expedita? Doloremque, inventore facere maiores est expedita nemo dolores veritatis corrupti neque hic pariatur natus minus tempora sed dolore atque.
+                </span></p>
+            </div>
+        </div>
+        <section class="similares">
+            <h2 class="titulo">similares</h2>
+            <div class="carrusel">
+                <div class="contenedor_carrusel">
+                    <a href="movie_detail.html?video=joker" class="item_carrusel">
+                        <span class="titulo_item">joker</span>
+                        <img src="../imagenes/img1.jpg" class="imgPelicula">
+                    </a>
+                    <a href="movie_detail.html?video=spiderman" class="item_carrusel">
+                        <span class="titulo_item">spiderman</span>
+                        <img src="../imagenes/img2.jpg" class="imgPelicula">
+                    </a>
+                    <a href="movie_detail.html?video=piratas del caribe" class="item_carrusel">
+                        <span class="titulo_item">piratas del caribe</span>
+                        <img src="../imagenes/img4.jpg" class="imgPelicula">
+                    </a>
+                    <a href="movie_detail.html?video=godzilla vs kong" class="item_carrusel">
+                        <span class="titulo_item">godzilla vs kong</span>
+                        <img src="../imagenes/img7.jpg" class="imgPelicula">
+                    </a>
+                    <a href="movie_detail.html?video=barbie" class="item_carrusel">
+                        <span class="titulo_item">barbie</span>
+                        <img src="../imagenes/img9.jpg" class="imgPelicula">
+                    </a>
+                    <a href="movie_detail.html?video=fight club" class="item_carrusel">
+                        <span class="titulo_item">fight club</span>
+                        <img src="../imagenes/img12.jpg" class="imgPelicula">
+                    </a>
+                    <a href="movie_detail.html?video=coraline" class="item_carrusel">
+                        <span class="titulo_item">coraline</span>
+                        <img src="../imagenes/img13.jpg" class="imgPelicula">
+                    </a>
+                </div>
+                <button class="antes">‹</button>
+                <button class="despues">›</button>
+            </div>
+        </section>
+    </main>
+    <script src="../scripts/movie_detail.js?extra=22" type="module"></script>
+</body>
+</html>

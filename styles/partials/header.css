@@ -1,0 +1,43 @@
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h1 {
+    margin: 0 auto;
+    padding: 20px 0;
+    color: white;
+    /* text-align: center; */
+    font-size: 42px;
+    /* flex-grow: 1; */
+}
+.header_der{
+    /* position: absolute; */
+    /* right: 20px; */
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+#nombre_usuario{
+    /* position: absolute; */
+    /* right: 140px; */
+    color: white;
+    margin-right: 10px;
+}
+#nombre_usuario::before{
+    content: "usuario: ";
+}
+.btn_salir {
+    background-color: red;
+    height: 30px;
+    width: 80px;
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 18px;
+}

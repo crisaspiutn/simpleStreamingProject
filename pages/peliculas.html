@@ -26,9 +26,9 @@
 
     <nav>
         <ul>
-            <li><a href="inicio.html" class="seleccionado">Home</a></li>
+            <li><a href="inicio.html">Home</a></li>
             <li><a id="btn_series" href="series.html">Series</a></li>
-            <li><a id="btn_peliculas" href="peliculas.html">Peliculas</a></li>
+            <li><a class="seleccionado" id="btn_peliculas" href="peliculas.html">Peliculas</a></li>
             <li><a href="perfil.html">Perfil</a></li>
         </ul>
     </nav>
@@ -36,11 +36,11 @@
         <div class="filtro_categoria">
             <label for="categorias">categorías</label>
             <select name="categoria" id="seleccionador" placeholder="seleccionar categoria">
-                <!-- <option value="cat1">ficcion</option> -->
-                <!-- <option value="cat1" selected>terror</option> -->
-                <!-- <option value="cat1">comedia</option> -->
-                <!-- <option value="cat1">aventura</option> -->
-                <!-- <option value="cat1">anime</option> -->
+                <option value="cat1">ficcion</option>
+                <option value="cat1" selected>terror</option>
+                <option value="cat1">comedia</option>
+                <option value="cat1">aventura</option>
+                <option value="cat1">anime</option>
             </select>
         </div>
         <input id="buscador" type="search" class="icon_search" placeholder="buscar por título">
@@ -60,21 +60,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="divNovedades">
-            <h3 id="titulo_series">Series</h3>
-            <div class="contenedorFila">
-                <!-- <div class="imgNovedades fila" id="marco_series"> -->
-                <div class="imgMasVistos fila" id="marco_series">
-                    <!-- <a href="detallesPelicula6.html"><img src="../imagenes/img6.jpg" class="imgPelicula"></a> -->
-                    <!-- <a href="detallesPelicula7.html"><img src="../imagenes/img7.jpg" class="imgPelicula"></a> -->
-                    <!-- <a href="detallesPelicula8.html"><img src="../imagenes/img8.jpg" class="imgPelicula"></a> -->
-                    <!-- <a href="detallesPelicula9.html"><img src="../imagenes/img9.jpg" class="imgPelicula"></a> -->
-                    <!-- <a href="detallesPelicula10.html"><img src="../imagenes/img10.jpg" class="imgPelicula"></a> -->
-                </div>
-            </div>
-        </div>
-
         <h3>Recomendados para vos</h3>
         <div class="carrusel">
             <div class="contenedor_carrusel">
@@ -117,5 +102,4 @@
     </footer>
     <script src="../scripts/inicio.js" type="module"></script>
 </body>
-
 </html>

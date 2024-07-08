@@ -39,4 +39,4 @@ function onFormChange(e){
 form.addEventListener("submit", onFormSubmit);
 form.addEventListener("input", onFormChange);
 let texto="a";
-console.log(/^[A-Za-z]+$/.test(texto));
+// console.log(/^[A-Za-z]+$/.test(texto)+"aa");

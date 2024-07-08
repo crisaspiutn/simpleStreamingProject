@@ -67,7 +67,7 @@ a{
     /* margin-left: px; */
 }
 /* input[type="submit"]{ */
-input:not(input[type="button"]){
+input:not(input[type="submit"]){
     background-color: white;
     height: 34px;
 }

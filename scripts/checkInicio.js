@@ -19,11 +19,13 @@ function onFormSubmit(e){
         // if(usuarioBuscado.clave==clave){
         if(datos.usuarios[usuario].clave==clave){
             datos.usuario=usuario;
-            guardaDatos(datos);
             log.innerText="clave correcta";
             log.style.color="green";
-            alert("inicio sesion correctamente");
-            window.location = "/pages/inicio.html";
+            guardaDatos(datos);
+            setTimeout(() => {
+                alert("inicio sesion correctamente");
+                window.location = "/pages/inicio.html";
+            }, 10);
         }else log.innerText="clave incorrecta";
     }else console.log("usuario no encontrado");
 }

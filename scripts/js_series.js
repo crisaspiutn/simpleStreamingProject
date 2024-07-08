@@ -4,11 +4,10 @@ checkExistLocalStorage();
 let datos=getDatos();
 let lista_peliculas=getListaPeliculas();
 if(datos.usuario==undefined||datos.usuario==null)window.location = "/";
-// const btn_series=document.getElementById("btn_series");
+const btn_series=document.getElementById("btn_series");
 // const btn_peliculas=document.getElementById("btn_peliculas");
 // const titulo_series=document.getElementById("titulo_series");
 // const titulo_peliculas=document.getElementById("titulo_peliculas");
-
 let buscador=document.getElementById("buscador");
 let nombre_usuario=document.getElementById("nombre_usuario");
 nombre_usuario.innerText=datos.usuario;
@@ -20,7 +19,7 @@ btn_cerrar_sesion.addEventListener("click",()=>{
     window.location="/";
 });
 
-const marco_peliculas=document.getElementById("marco_peliculas");
+// const marco_peliculas=document.getElementById("marco_peliculas");
 const marco_series=document.getElementById("marco_series");
 console.log(lista_peliculas);
 function drawListaSegunCategoria(categoria,contenedor){
@@ -43,18 +42,18 @@ function drawItem(clave){
     `;
     return a;
 }
-drawListaSegunCategoria("pelicula",marco_peliculas);
+// drawListaSegunCategoria("pelicula",marco_peliculas);
 drawListaSegunCategoria("serie",marco_series);
 buscador.addEventListener("keyup",(e)=>{
     // console.log(e.target.value);
-    marco_peliculas.innerHTML="";
-    for (const key in lista_peliculas) {
-        if (Object.hasOwnProperty.call(lista_peliculas, key)) {
-            // const element = lista_peliculas[key];
-            if(lista_peliculas[key].tipo=="pelicula"&&(key.includes(e.target.value)||e.target.value==""))
-            marco_peliculas.appendChild(drawItem(key));
-        }
-    }
+    // marco_peliculas.innerHTML="";
+    // for (const key in lista_peliculas) {
+    //     if (Object.hasOwnProperty.call(lista_peliculas, key)) {
+    //         // const element = lista_peliculas[key];
+    //         if(lista_peliculas[key].tipo=="pelicula"&&(key.includes(e.target.value)||e.target.value==""))
+    //         marco_peliculas.appendChild(drawItem(key));
+    //     }
+    // }
     marco_series.innerHTML="";
     for (const key in lista_peliculas) {
         if (Object.hasOwnProperty.call(lista_peliculas, key)) {
@@ -64,16 +63,16 @@ buscador.addEventListener("keyup",(e)=>{
         }
     }
 });
-// btn_series.addEventListener("click",(e)=>{
-//     // e.preventDefault();
-//     console.log("btn_series");
-//     marco_peliculas.innerHTML="";
-//     titulo_peliculas.style.display="none";
-//     titulo_series.style.display="initial";
-//     drawListaSegunCategoria("serie",marco_series);
-// });
+btn_series.addEventListener("click",(e)=>{
+    e.preventDefault();
+    console.log("btn_series");
+    // marco_peliculas.innerHTML="";
+    // titulo_peliculas.style.display="none";
+    // titulo_series.style.display="initial";
+    drawListaSegunCategoria("serie",marco_series);
+});
 // btn_peliculas.addEventListener("click",(e)=>{
-//     // e.preventDefault();
+//     e.preventDefault();
 //     console.log("btn_peliculas");
 //     marco_series.innerHTML="";
 //     titulo_series.style.display="none";
@@ -81,8 +80,6 @@ buscador.addEventListener("keyup",(e)=>{
 //     drawListaSegunCategoria("pelicula",marco_peliculas);
 // });
 
-// al cambiar de secciones inicio, peliculas y series
-// se podria evitar cargar nuevo contenido y solo modificar el dom
 const seleccionador=document.getElementById("seleccionador");
 let lista_generos={};
 for (const key in lista_peliculas) {
